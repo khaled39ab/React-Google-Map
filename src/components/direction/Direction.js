@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { DirectionsRenderer, DirectionsService, GoogleMap, LoadScript } from '@react-google-maps/api';
 
-const Direction = () => {
+const Direction = ({origin, destination}) => {
     const [response, setResponse] = useState(null);
-
-    const destination = '';
-    const origin= '';
 
     const directionsCallback =(res)=> {    
         if (res !== null) {
