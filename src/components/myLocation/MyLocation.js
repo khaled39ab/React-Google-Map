@@ -3,8 +3,8 @@ import React from 'react';
 
 
 const containerStyle = {
-    width: '100vw',
-    height: '100vh'
+    width: '50vw',
+    height: '80vh'
 };
 
 const location = {
@@ -17,7 +17,7 @@ const MyLocation = () => {
     return (
         <div>
             <LoadScript
-                googleMapsApiKey="AIzaSyBtBR-isanIGaB7n_BPv6PI_sm2-gfWzaE"
+                googleMapsApiKey="AIzaSyBtBR-isanIGaB7n_BPv6PI_sm2-gfWzaE" //fake api
             >
                 <GoogleMap
                     mapContainerStyle={containerStyle}
